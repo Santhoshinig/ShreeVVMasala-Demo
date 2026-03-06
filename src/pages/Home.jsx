@@ -1,7 +1,7 @@
 import Hero from '../components/Hero';
 import Marquee from '../components/Marquee';
 import Stats from '../components/Stats';
-import ProductStrip from '../components/ProductStrip';
+import Products from '../components/Products';
 import WhyChooseUs from '../components/WhyChooseUs';
 import BulkOrder from '../components/BulkOrder';
 import About from '../components/About';
@@ -12,8 +12,7 @@ export default function Home() {
         <main id="home">
             <Hero />
             <Marquee />
-            <Stats />
-            <ProductStrip />
+            <Products />
             <WhyChooseUs />
             <BulkOrder />
             <About />

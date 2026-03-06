@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from 'react';
 
 const stats = [
-    { icon: 'fas fa-pepper-hot', target: 16, label: 'Masala Varieties' },
+    { icon: 'fas fa-pepper-hot', target: 3, label: 'Masala Varieties' },
     { icon: 'fas fa-certificate', target: 100, label: '% Pure & Natural' },
     { icon: 'fas fa-home', target: 500, label: 'Happy Families' },
     { icon: 'fas fa-handshake', target: 'Bulk', label: 'Orders Welcome' },

@@ -2,19 +2,16 @@ import { Link, useLocation, useNavigate } from 'react-router-dom';
 
 const quickLinks = [
     { label: 'Home', href: 'home', type: 'scroll' },
-    { label: 'Products', href: '/products', type: 'link' },
+    { label: 'Products', href: 'products', type: 'scroll' },
     { label: 'Why Us', href: 'why', type: 'scroll' },
     { label: 'About Us', href: 'about', type: 'scroll' },
     { label: 'Contact', href: 'contact', type: 'scroll' },
 ];
 
 const productLinks = [
-    { label: 'Turmeric Powder', href: '/products' },
-    { label: 'Dhaniya Powder', href: '/products' },
-    { label: 'Kulambu Thool', href: '/products' },
-    { label: 'Sambar Powder', href: '/products' },
-    { label: 'Garam Masala', href: '/products' },
-    { label: 'Fish Fry Masala', href: '/products' },
+    { label: 'Chilli Powder', href: 'products', type: 'scroll' },
+    { label: 'Chicken 65 Masala', href: 'products', type: 'scroll' },
+    { label: 'Fish Fry Masala', href: 'products', type: 'scroll' },
 ];
 
 export default function Footer() {
@@ -44,7 +41,7 @@ export default function Footer() {
                     <div className="footer-grid">
                         <div className="footer-brand">
                             <div className="footer-logo">
-                                <img src="/products/LOGO SHREE VV.png" alt="Shree VV Logo" className="footer-logo-img" />
+                                <img src="/LOGO SHREE VV.png" alt="Shree VV Logo" className="footer-logo-img" />
                                 <div className="footer-brand-name">Shree <span>VV</span> Masala</div>
                             </div>
                             <p className="footer-tagline">The Secret of Tradition</p>
@@ -74,7 +71,7 @@ export default function Footer() {
                             <ul>
                                 {productLinks.map(p => (
                                     <li key={p.label}>
-                                        <Link to={p.href}>{p.label}</Link>
+                                        <a href={`#${p.href}`} onClick={(e) => handleNavClick(e, p)}>{p.label}</a>
                                     </li>
                                 ))}
                             </ul>

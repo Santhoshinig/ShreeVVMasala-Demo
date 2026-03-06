@@ -1,9 +1,9 @@
 import { useState, useEffect, useRef } from 'react';
 
 const slides = [
-    { bg: '/hero1.png' },
-    { bg: '/FULL_PRODUCTS_1760x608.png' },
-    { bg: '/NEW EDIT.png' },
+    { bg: '/hero1.png', mobileBg: '/hero1_mobile.jpg' },
+    { bg: '/FULL_PRODUCTS_1760x608.png', mobileBg: '/hero2_mobile.jpg' },
+    { bg: '/NEW EDIT.png', mobileBg: '/hero3_mobile.jpg' },
 ];
 
 export default function Hero() {
@@ -31,7 +31,10 @@ export default function Hero() {
                         <div
                             key={i}
                             className={`slide ${i === current ? 'active' : ''}`}
-                            style={{ backgroundImage: `url('${slide.bg}')` }}
+                            style={{
+                                '--bg-desktop': `url('${slide.bg}')`,
+                                '--bg-mobile': `url('${slide.mobileBg}')`
+                            }}
                         />
                     ))}
                 </div>

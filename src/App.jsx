@@ -9,7 +9,6 @@ import useAOS from './hooks/useAOS';
 
 // Pages
 import Home from './pages/Home';
-import ProductsPage from './pages/ProductsPage';
 
 export default function App() {
   useAOS();
@@ -21,7 +20,6 @@ export default function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/products" element={<ProductsPage />} />
       </Routes>
       <Footer />
       <FloatingButtons />

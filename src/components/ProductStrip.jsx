@@ -1,11 +1,7 @@
 const allProducts = [
-    '/home pro1.png',
-    '/home pro 2.png',
-    '/home pro 3.png',
-    '/home pro4.png',
-    '/home pro5.png',
-    '/home pro6.png',
-    '/homepro7.png'
+    '/chilli.png',
+    '/chicken 65.png',
+    '/fish fry.png',
 ];
 
 export default function ProductStrip() {

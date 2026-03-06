@@ -3,7 +3,7 @@ import { Link, useLocation, useNavigate } from 'react-router-dom';
 
 const navItems = [
     { href: 'home', label: 'Home', type: 'scroll' },
-    { href: '/products', label: 'Products', type: 'link' },
+    { href: 'products', label: 'Products', type: 'scroll' },
     { href: 'why', label: 'Why Us', type: 'scroll' },
     { href: 'about', label: 'About', type: 'scroll' },
     { href: 'contact', label: 'Contact', type: 'scroll' },
@@ -58,7 +58,7 @@ export default function Navbar() {
         <nav className="navbar" id="navbar">
             <div className="nav-container">
                 <Link to="/" className="nav-logo" onClick={() => setActive('home')}>
-                    <img src="/products/LOGO SHREE VV.png" alt="Shree VV Masala Logo" className="nav-logo-img" />
+                    <img src="/LOGO SHREE VV.png" alt="Shree VV Masala Logo" className="nav-logo-img" />
                     <div className="logo-text-wrap">
                         <span className="logo-shree">SHREE <span className="logo-vv">VV</span></span>
                         <span className="logo-masala">Masala</span>
@@ -96,7 +96,7 @@ export default function Navbar() {
                         rel="noreferrer"
                         className="nav-cta"
                     >
-                        <i className="fab fa-whatsapp"></i> Order Now
+                        <i className="fab fa-whatsapp"></i> <span className="cta-text">Order Now</span>
                     </a>
                     <button
                         className={`hamburger ${menuOpen ? 'open' : ''}`}
